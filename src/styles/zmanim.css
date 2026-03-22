@@ -1,0 +1,50 @@
+#zmanim {
+  position: fixed;
+  top: 20%;
+  left: 5%;
+  min-width: 42.5vw;
+  max-width: 42.5vw;
+  height: 75vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 5vh 9vw;
+  background-image: url("../assets/frame3.png");
+  background-size: 100% 100%;
+  box-sizing: border-box;
+
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+#zmanim h2 {
+  background-image: url("../assets/frame4.png");
+  background-size: 100% 100%;
+  font-size: 4vh;
+  padding: 2vh 4vw;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+#zmanim ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none; /* מבטל את הנקודות של הרשימה */
+  padding: 0 0;
+  margin: 0;
+}
+
+#zmanim li {
+  display: flex;
+  justify-content: space-between; /* שם את שם הזמן בימין והשעה בשמאל */
+  align-items: center;
+  width: 100%;
+}
+
+#zmanim li p {
+  margin: 1vh;
+}

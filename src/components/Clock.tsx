@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "../styles/clock.css"
 
 export default function Clock() {
   const [time, setTime] = useState(new Date());
@@ -11,5 +12,5 @@ export default function Clock() {
     return () => clearInterval(interval);
   }, []);
 
-  return <div>{time.toLocaleTimeString()}</div>;
+  return <div id="clock">{time.toLocaleTimeString()}</div>;
 }

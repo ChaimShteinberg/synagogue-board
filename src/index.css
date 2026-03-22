@@ -1,0 +1,9 @@
+body {
+  background-image: url("./assets/background.png");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+
+  color: #3e2723;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}

@@ -1,0 +1,23 @@
+header {
+  background-image: url("../assets/frame.png");
+  background-size: 100% 100%;
+  font-weight: bold;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -10%;
+  right: 25%;
+}
+
+header h1{
+  font-size: 3vh;
+  margin-top: 10%;
+}
+
+header h1 strong{
+  font-size: 3.5vh;
+  margin-top: 10%;
+}

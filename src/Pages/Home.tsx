@@ -1,16 +1,23 @@
 import Clock from "../components/Clock";
-import ParnesPlace from "../components/ParnesPlace";
+import Tfilot from "../components/Tfilot";
 import TodayDate from "../components/TodayDate";
-import ZmanimTable from "../components/ZmanimView";
-import type { ParnesType } from "../types/parnesType";
+import Zmanum from "../components/Zmanim";
+import "../styles/home.css";
 
-export default function Home(props: { parnesList: ParnesType[] }) {
+export default function Home() {
   return (
     <>
+      <header>
+        <h1>
+          בית הכנסת <strong>'סטאלין קארלין'</strong> גן הדסים
+        </h1>
+      </header>
       <Clock />
       <TodayDate />
-      <ZmanimTable/>
-      <ParnesPlace parnesList={props.parnesList} />
+      <Tfilot />
+      <Zmanum />
+      {/* <ZmanimTable /> */}
+      {/* <ParnesPlace parnesList={props.parnesList} /> */}
     </>
   );
 }
