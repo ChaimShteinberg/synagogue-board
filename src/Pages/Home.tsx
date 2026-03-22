@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Clock from "../components/Clock";
 import Tfilot from "../components/Tfilot";
 import TodayDate from "../components/TodayDate";
@@ -5,6 +6,30 @@ import Zmanum from "../components/Zmanim";
 import "../styles/home.css";
 
 export default function Home() {
+  useEffect(() => {
+    const setupTwoAMRefresh = () => {
+      const now: Date = new Date();
+      const target: Date = new Date();
+
+      target.setHours(2, 0, 0, 0);
+
+      if (now > target) {
+        target.setDate(target.getDate() + 1);
+      }
+
+      const msUntilTarget: number = target.getTime() - now.getTime();
+
+      const timeoutId = setTimeout(() => {
+        window.location.reload();
+      }, msUntilTarget);
+      return () => {
+        clearTimeout(timeoutId);
+      };
+    };
+
+    const cleanup = setupTwoAMRefresh();
+    return cleanup;
+  }, []);
   return (
     <>
       <header>
@@ -16,8 +41,6 @@ export default function Home() {
       <TodayDate />
       <Tfilot />
       <Zmanum />
-      {/* <ZmanimTable /> */}
-      {/* <ParnesPlace parnesList={props.parnesList} /> */}
     </>
   );
 }
