@@ -4,8 +4,8 @@ type ZmanimResponse = {
   times: Record<string, string>;
 };
 
-export async function fetchZmanimToday(): Promise<Record<string, string>> {
-  const today = new Date().toISOString().split("T")[0];
+export async function fetchZmanim(date: Date): Promise<Record<string, string>> {
+  const today = date.toISOString().split("T")[0];
 
   const { data } = await axios.get<ZmanimResponse>(
     "https://www.hebcal.com/zmanim",

@@ -1,5 +1,5 @@
 import { zmanimLabels } from "../constants/zmanimLabels";
-import { useZmanimToday } from "../hooks/useZmanimToday";
+import { useZmanimToday } from "../hooks/useZmanim";
 
 export default function ZmanimView() {
   const { data, isLoading, error } = useZmanimToday();

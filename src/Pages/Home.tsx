@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Clock from "../components/Clock";
 import Tfilot from "../components/Tfilot";
 import TodayDate from "../components/TodayDate";
-import Zmanum from "../components/Zmanim";
+import Zmanim from "../components/Zmanim";
 import "../styles/home.css";
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
       <Clock />
       <TodayDate />
       <Tfilot />
-      <Zmanum />
+      <Zmanim />
     </>
   );
 }

@@ -1,8 +1,8 @@
-import { useZmanimToday } from "../hooks/useZmanimToday";
+import { useZmanimToday } from "../hooks/useZmanim";
 import "../styles/zmanim.css";
 import { formatTime } from "../utils/formatTime";
 
-export default function Zmanum() {
+export default function Zmanim() {
   const { data, isLoading, error } = useZmanimToday();
 
   if (isLoading) return <div>טוען…</div>;
