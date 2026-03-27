@@ -11,13 +11,11 @@ const totalImages = 6;
 
     return () => clearInterval(interval);
   }, []);
-
-  console.log(`../../public/modaot/${currentIndex}.jpeg`);
   
   return (
     <section id="modaot">
       <img
-        src={`../../public/modaot/${currentIndex}.jpeg`}
+        src={`/modaot/${currentIndex}.jpeg`}
         alt={`Slide ${currentIndex}`}
 
       />
