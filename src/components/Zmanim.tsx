@@ -20,15 +20,15 @@ export default function Zmanim() {
           <p>{formatTime(data.sofZmanShmaMGA19Point8 as string)}</p>
         </li>
         <li>
-          <strong>סוזק"ש 2:</strong>
+          <strong>סוזק"ש ב':</strong>
           <p>{formatTime(data.sofZmanShma as string)}</p>
         </li>
         <li>
-          <strong>סוז"ת 1:</strong>
+          <strong>סוז"ת א':</strong>
           <p>{formatTime(data.sofZmanTfillaMGA19Point8 as string)}</p>
         </li>
         <li>
-          <strong>סוז"ת 2:</strong>
+          <strong>סוז"ת ב':</strong>
           <p>{formatTime(data.sofZmanTfilla as string)}</p>
         </li>
         <li>

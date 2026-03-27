@@ -49,7 +49,7 @@ export default function Tfilot() {
           <p>8:00</p>
         </li>
 
-        <li style={{fontSize: "2.5vh"}}>
+        <li style={{fontSize: "2vh"}}>
           <strong>אבות ובנים:</strong>{" "}
           <p>אחר הקידוש</p>
         </li>
@@ -59,7 +59,7 @@ export default function Tfilot() {
           <p>5:00</p>
         </li>
 
-        <li style={{fontSize: "2.5vh"}}>
+        <li style={{fontSize: "2vh"}}>
           <strong>דרשת שבת הגדול:</strong>
           <p>5:30</p>
         </li>
