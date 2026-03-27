@@ -12,11 +12,11 @@ export async function fetchZmanim(date: Date): Promise<Record<string, string>> {
     {
       params: {
         cfg: "json",
-        latitude: 31.93,
-        longitude: 35.04,
+        latitude: 32,
+        longitude: 35,
         tzid: "Asia/Jerusalem",
         ue: "on",
-        elev: 300,
+        elev: 350,
         sec: 1,
         date: today,
       },
