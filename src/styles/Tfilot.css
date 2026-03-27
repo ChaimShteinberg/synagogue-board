@@ -5,17 +5,17 @@
   min-width: 42.5vw;
   max-width: 42.5vw;
   height: 75vh;
-  
+
   display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
-  
-  padding: 5vh 9vw; 
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 5vh 9vw;
   background-image: url("../assets/frame3.png");
   background-size: 100% 100%;
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
+
   font-size: 3vh;
   font-weight: bold;
 }
@@ -25,23 +25,27 @@
   background-size: 100% 100%;
   font-size: 4vh;
   padding: 2vh 4vw;
-  margin-bottom: 2vh; 
+  margin-bottom: 2vh;
   text-align: center;
 }
 
 #Tfilot ul {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  list-style: none; /* מבטל את הנקודות של הרשימה */
+  list-style: none; 
   padding: 0 0;
   margin: 0;
-  gap: 1vh; /* יוצר רווח קבוע בין השורות */
 }
 
 #Tfilot li {
   display: flex;
-  justify-content: space-between; /* שם את שם הזמן בימין והשעה בשמאל */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
+}
+
+#Tfilot li p {
+  margin: 1vh;
 }

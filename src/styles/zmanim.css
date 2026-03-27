@@ -32,15 +32,16 @@
 #zmanim ul {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 100%;
-  list-style: none; /* מבטל את הנקודות של הרשימה */
+  list-style: none; 
   padding: 0 0;
   margin: 0;
 }
 
 #zmanim li {
   display: flex;
-  justify-content: space-between; /* שם את שם הזמן בימין והשעה בשמאל */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
 }
