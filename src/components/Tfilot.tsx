@@ -51,7 +51,7 @@ export default function Tfilot() {
 
         <li>
           <strong>אבות ובנים:</strong>{" "}
-          <p>אחרי קידושא רבא</p>
+          <p>אחר קידושא רבא</p>
         </li>
 
         <li>
