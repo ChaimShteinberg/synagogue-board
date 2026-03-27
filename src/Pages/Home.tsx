@@ -4,6 +4,7 @@ import Tfilot from "../components/Tfilot";
 import TodayDate from "../components/TodayDate";
 import Zmanim from "../components/Zmanim";
 import "../styles/home.css";
+import Modaot from "../components/Modaot";
 
 export default function Home() {
   useEffect(() => {
@@ -40,6 +41,7 @@ export default function Home() {
       <Clock />
       <TodayDate />
       <Tfilot />
+      <Modaot/>
       <Zmanim />
     </>
   );

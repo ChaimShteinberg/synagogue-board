@@ -1,0 +1,15 @@
+#modaot {
+  position: fixed;
+  top: 20vh;
+  right: 50vw;
+  transform: translateX(50%);
+  width: 30vw;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modaot img {
+  height: 100%;
+}

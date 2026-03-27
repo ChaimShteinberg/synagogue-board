@@ -12,7 +12,7 @@ export default function Tfilot() {
 
   return (
     <section id="Tfilot">
-      <h2>זמני התפילות</h2>
+      <h2>זמני תפילות</h2>
       <ul dir="rtl">
         {/* <li>
           <strong>שחרית:</strong>
@@ -30,7 +30,7 @@ export default function Tfilot() {
         </li> */}
 
         <li>
-          <strong>מנחה ערב שב"ק:</strong>
+          <strong>מנחה ערש"ק:</strong>
           <p>6:44</p>
         </li>
 
@@ -40,7 +40,7 @@ export default function Tfilot() {
         </li>
 
         <li>
-          <strong>חברת משכימי קום:</strong>{" "}
+          <strong>משכימי קום:</strong>{" "}
           <p>7:30</p>
         </li>
 
@@ -49,9 +49,9 @@ export default function Tfilot() {
           <p>8:00</p>
         </li>
 
-        <li>
+        <li style={{fontSize: "2.5vh"}}>
           <strong>אבות ובנים:</strong>{" "}
-          <p>אחר קידושא רבא</p>
+          <p>אחר הקידוש</p>
         </li>
 
         <li>
@@ -59,7 +59,7 @@ export default function Tfilot() {
           <p>5:00</p>
         </li>
 
-        <li>
+        <li style={{fontSize: "2.5vh"}}>
           <strong>דרשת שבת הגדול:</strong>
           <p>5:30</p>
         </li>
