@@ -14,7 +14,7 @@ export default function Modaot() {
 
   return (
     <section id="modaot">
-      <img id="frame" src="src/assets/frame.png" alt="frame" />
+      <img id="frame" src="/frame.png" alt="frame" />
       <img src={`/modaot/${currentIndex}.jpeg`} alt={`Slide ${currentIndex}`} />
     </section>
   );
