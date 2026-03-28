@@ -12,7 +12,7 @@
   align-items: center;
 
   padding: 5vh 6vw 8vh 6vw;
-  background-image: url("../assets/frame3.png");
+  background-image: url("../assets/frame2.png");
   background-size: 100% 100%;
   box-sizing: border-box;
 
@@ -21,7 +21,7 @@
 }
 
 #zmanim h2 {
-  background-image: url("../assets/frame4.png");
+  background-image: url("../assets/frame.png");
   background-size: 100% 100%;
   font-size: 4vh;
   padding: 2vh 2vw;

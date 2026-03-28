@@ -41,7 +41,7 @@ export default function Home() {
       <Clock />
       <TodayDate />
       <Tfilot />
-      <Modaot/>
+      <Modaot />
       <Zmanim />
     </>
   );

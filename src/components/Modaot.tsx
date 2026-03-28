@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import "../styles/modaot.css"
+import "../styles/modaot.css";
 
 export default function Modaot() {
   const [currentIndex, setCurrentIndex] = useState(0);
-const totalImages = 4;
+  const totalImages = 4;
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
@@ -11,14 +11,11 @@ const totalImages = 4;
 
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <section id="modaot">
-      <img
-        src={`/modaot/${currentIndex}.jpeg`}
-        alt={`Slide ${currentIndex}`}
-
-      />
+      <img id="frame" src="src/assets/frame.png" alt="frame" />
+      <img src={`/modaot/${currentIndex}.jpeg`} alt={`Slide ${currentIndex}`} />
     </section>
   );
 }

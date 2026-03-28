@@ -11,5 +11,13 @@
 }
 
 #modaot img {
-  height: 100%;
+  height: 85%;
+  z-index: 1000;
+}
+
+#modaot #frame {
+  position: absolute;
+  width: 30vw;
+  height: 75vh;
+  z-index: 2000;
 }
