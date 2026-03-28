@@ -13,22 +13,22 @@ export default function Zmanim() {
       <h2>זמני היום</h2>
       <ul dir="rtl">
         <li>
-          <strong>הנץ החמה:</strong> <p>{formatTime(data.sunrise as string)}</p>
+          <strong>זריחה:</strong> <p>{formatTime(data.sunrise as string)}</p>
         </li>
         <li>
-          <strong>סו"ז ק"ש מג"א:</strong>
+          <strong>סוזק"ש א':</strong>
           <p>{formatTime(data.sofZmanShmaMGA19Point8 as string)}</p>
         </li>
         <li>
-          <strong>סו"ז ק"ש שו"ע הרב:</strong>
+          <strong>סוזק"ש ב':</strong>
           <p>{formatTime(data.sofZmanShma as string)}</p>
         </li>
         <li>
-          <strong>סו"ז תפילה מג"א:</strong>
+          <strong>סוז"ת א':</strong>
           <p>{formatTime(data.sofZmanTfillaMGA19Point8 as string)}</p>
         </li>
         <li>
-          <strong>סו"ז תפילה שו"ע הרב:</strong>
+          <strong>סוז"ת ב':</strong>
           <p>{formatTime(data.sofZmanTfilla as string)}</p>
         </li>
         <li>
@@ -39,7 +39,7 @@ export default function Zmanim() {
           <p>{formatTime(data.minchaGedola as string)}</p>
         </li>
         <li>
-          <strong>שקיעת החמה:</strong>{" "}
+          <strong>שקיעה:</strong>{" "}
           <p>{formatTime(data.sunset as string)}</p>
         </li>
       </ul>
