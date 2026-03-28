@@ -3,7 +3,7 @@ import "../styles/modaot.css"
 
 export default function Modaot() {
   const [currentIndex, setCurrentIndex] = useState(0);
-const totalImages = 6;
+const totalImages = 4;
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);

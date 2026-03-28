@@ -1,5 +1,5 @@
 import { useZmanimToday } from "../hooks/useZmanim";
-// import { formatTime } from "../utils/formatTime";
+import { formatTime } from "../utils/formatTime";
 import "../styles/Tfilot.css";
 
 export default function Tfilot() {
@@ -8,13 +8,13 @@ export default function Tfilot() {
   if (isLoading) return <div>טוען…</div>;
   if (error || !data) return <div>שגיאה</div>;
 
-  // const sunset = data.sunset;
+  const sunset = data.sunset;
 
   return (
     <section id="Tfilot">
       <h2>זמני תפילות</h2>
       <ul dir="rtl">
-        {/* <li>
+        <li>
           <strong>שחרית:</strong>
           <p>8:30</p>
         </li>
@@ -24,12 +24,17 @@ export default function Tfilot() {
           <p>{formatTime(sunset as string, "minus", 10)}</p>
         </li>
 
+        <li style={{ flexDirection: "column", alignItems:"center", lineHeight: "4.5vh", textAlign: "center" }}>
+          <p>שיעור בין מנחה למעריב</p>
+          <p>מפי הרה"ח ר' יעקב בלומינג הי"ו</p>
+        </li>
+
         <li>
           <strong>מעריב:</strong>{" "}
           <p>{formatTime(sunset as string, "plus", 30)}</p>
-        </li> */}
+        </li>
 
-        <li>
+        {/* <li>
           <strong>מנחה ערש"ק:</strong>
           <p>6:44</p>
         </li>
@@ -67,7 +72,7 @@ export default function Tfilot() {
         <li>
           <strong>מנחה שב"ק:</strong>{" "}
           <p>6:29</p>
-        </li>
+        </li> */}
       </ul>
     </section>
   );
