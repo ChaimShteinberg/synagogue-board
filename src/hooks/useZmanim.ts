@@ -5,7 +5,9 @@ export function useZmanimToday() {
   return useQuery({
     queryKey: ["zmanim", "today"],
     queryFn: () => fetchZmanim(new Date()),
-    staleTime: 1000 * 60 * 60, // שעה
+    staleTime: 1000 * 60 * 60 * 11,
+    retry: true,
+    retryDelay: 1000 * 60 * 60,
   });
 }
 
